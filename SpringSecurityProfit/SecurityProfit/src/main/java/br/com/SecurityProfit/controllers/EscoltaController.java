@@ -102,6 +102,12 @@ public class EscoltaController {
         return ResponseEntity.ok(escoltaService.findAllEscoltaCard(usuarioAgenteId));
     }
 
+    @GetMapping(path = "/escoltas")
+    @ApiOperation(value = "Retorna uma lista de escoltas testes")
+    public ResponseEntity<?> findAllEscoltas() throws Exception{
+        return ResponseEntity.ok(escoltaService.findAllEscoltaCard(1L));
+    }
+
     @PutMapping(path = "/{id}/cancelar-escolta")
     @ApiOperation(value = "Cancela a escolta")
     public ResponseEntity<?> cancelarEscolta(@PathVariable Long id) throws Exception {
@@ -119,6 +125,4 @@ public class EscoltaController {
     public ResponseEntity<?> findById(@PathVariable Long id) throws Exception {
         return ResponseEntity.ok(escoltaService.findRespostasByEscoltaId(id));
     }
-
-    
 }
