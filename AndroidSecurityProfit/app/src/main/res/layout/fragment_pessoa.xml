@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo_telas"
+    tools:context=".ui.pessoa.PessoaFragment"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLpPessoa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/button_amarelo"
+            android:text="Limpar\nBusca"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:drawableLeft="@drawable/limpar"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+
+            />
+
+        <Button
+            android:id="@+id/btnNvPessoa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/button_azul"
+            android:text="Nova\nPessoa"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:drawableLeft="@drawable/nova_pessoa"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtBscPessoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o nome ou e-mail..."
+        android:inputType="text"
+        android:padding="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_margin="12dp"
+        android:drawableLeft="@drawable/lupa"
+        android:drawablePadding="10dp"
+
+        android:background="@drawable/forma_edit_text"
+        />
+    <GridView
+        android:id="@+id/gvPessoa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_fundo_grid"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_margin="12dp"
+         />
+
+
+
+
+</LinearLayout>

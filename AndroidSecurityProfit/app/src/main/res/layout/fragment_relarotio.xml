@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_telas"
+    android:orientation="vertical"
+    tools:context=".ui.relatorio.RelatorioFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:paddingHorizontal="50dp"
+        android:text="Relação de Escolta"
+        android:textAlignment="center"
+        android:textColor="@color/icons_gray"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:background="@drawable/border_fundo_edit_text"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Cliente de Origem:"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoBuscaOrigem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe a cliente origem..."
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_fundo_edit_text"
+            />
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Cliente Destino:"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoBuscaDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe a cliente destino..."
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_fundo_edit_text"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Agente:"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoBuscaAgente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe o agente.."
+            android:inputType="text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_fundo_edit_text"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:text="Data de Abertura:"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:inputType="none"
+            android:hint="____ /____ /____"
+            android:paddingHorizontal="25dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:background="@drawable/border_fundo_edit_text"
+        />
+
+            <Button
+                android:id="@+id/buttonDatePicker"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/button_toolbar"
+                android:drawableLeft="@drawable/calendario"
+                android:padding="5dp" />
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:paddingHorizontal="70dp">
+
+                <Button
+                    android:id="@+id/btnGeraRelatorio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingVertical="10dp"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/button_toolbar"
+                    android:text="Exportar Relatório"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/relatorio"
+                    android:textAllCaps="false"/>
+
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="br.com.securityprofit.ui.inicio.InicioFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_cad_escolta"
+        android:name="br.com.securityprofit.ui.escolta.CadEscoltaFragment"
+        android:label="Escolta"
+        tools:layout="@layout/fragment_cad_escolta"
+        />
+
+    <fragment
+        android:id="@+id/nav_checkilist_escolta"
+        android:name="br.com.securityprofit.ui.escolta.ChecklistEscoltaFragment"
+        android:label="Checklist"
+        tools:layout="@layout/fragment_checklist_escolta"/>
+
+    <fragment
+        android:id="@+id/nav_horarios_escolta"
+        android:name="br.com.securityprofit.ui.escolta.HorarioEscoltaFragment"
+        android:label="Horários"
+        tools:layout="@layout/fragment_horario_escolta"/>
+
+    <fragment
+        android:id="@+id/nav_gastos_escolta"
+        android:name="br.com.securityprofit.ui.escolta.GastoEscoltaFragment"
+        android:label="Gastos"
+        tools:layout="@layout/fragment_gasto_escolta"/>
+
+
+
+    <fragment
+        android:id="@+id/nav_relatorio"
+        android:name="br.com.securityprofit.ui.relatorio.RelatorioFragment"
+        android:label="Relatório"
+        tools:layout="@layout/fragment_relarotio" />
+
+    <fragment
+        android:id="@+id/nav_pessoa"
+        android:name="br.com.securityprofit.ui.pessoa.PessoaFragment"
+        android:label="Pessoa"
+        tools:layout="@layout/fragment_pessoa" />
+
+
+    <fragment
+        android:id="@+id/nav_checklist"
+        android:name="br.com.securityprofit.ui.checklist.ChecklistFragment"
+        android:label="Checklist"
+        tools:layout="@layout/fragment_checklist" />
+
+    <fragment
+        android:id="@+id/nav_cad_checklist"
+        android:name="br.com.securityprofit.ui.checklist.CadChecklistFragment"
+        android:label="Checklist"
+        tools:layout="@layout/fragment_cad_checklist"
+        />
+
+    <fragment
+        android:id="@+id/nav_cad_pergunta"
+        android:name="br.com.securityprofit.ui.checklist.CadPerguntaFragment"
+        android:label="Pergunta"
+        tools:layout="@layout/fragment_cad_pergunta"/>
+
+    <fragment
+        android:id="@+id/nav_configuracao"
+        android:name="br.com.securityprofit.ui.configuracoes.ConfiguracoesFragment"
+        android:label="Configurações"
+        tools:layout="@layout/fragment_configuracoes" />
+
+    <fragment
+        android:id="@+id/nav_usuario"
+        android:name="br.com.securityprofit.ui.usuario.UsuarioFragment"
+        android:label="Usuário"
+        tools:layout="@layout/fragment_usuario" />
+
+    <fragment
+        android:id="@+id/na_cad_usuario"
+        android:name="br.com.securityprofit.ui.usuario.CadUsuarioFragment"
+        android:label="Usuário"
+        tools:layout="@layout/fragment_cad_usuario"/>
+
+    <fragment
+        android:id="@+id/nav_veiculo"
+        android:name="br.com.securityprofit.ui.veiculo.VeiculoFragment"
+        android:label="Veiculo"
+        tools:layout="@layout/fragment_veiculo" />
+
+    <fragment
+        android:id="@+id/nav_cad_veiculo"
+        android:name="br.com.securityprofit.ui.veiculo.CadVeiculoFragment"
+        android:label="Veículo"
+        tools:layout="@layout/fragment_cad_veiculo"/>
+
+    <fragment
+        android:id="@+id/nav_cad_pessoa"
+        android:name="br.com.securityprofit.ui.pessoa.CadPessoaFragment"
+        android:label="Pessoa"
+        tools:layout="@layout/fragment_cad_pessoa"/>
+
+    <activity
+        android:id="@+id/activity_pessoa"
+        android:name="br.com.securityprofit.ButtonMenuActivity"
+        android:label="Pessoa"
+        tools:layout="@layout/activity_button_menu"
+        />
+
+    <activity
+        android:id="@+id/activity_minha_escolta"
+        android:name="br.com.securityprofit.ButtonMinhasEscoltaActivity"
+        android:label="Escolta"
+        tools:layout="@layout/activity_button_minhas_escolta"
+        />
+
+    <activity
+        android:id="@+id/activity_cad_escolta"
+        android:name="br.com.securityprofit.ui.escolta.CadEscoltaActivity"
+        android:label="Escolta"
+        tools:layout="@layout/activity_cad_escolta"
+        />
+
+    <activity
+        android:id="@+id/activity_dados_escolta"
+        android:name="br.com.securityprofit.ButtonMenuEscoltaActivity"
+        android:label="Dados Escolta"
+        tools:layout="@layout/activity_button_menu_escolta"
+        />
+
+
+
+
+
+
+</navigation>

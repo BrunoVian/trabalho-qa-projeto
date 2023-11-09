@@ -1,0 +1,13 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/toolbar_padrao" /> <!-- Cor de fundo selecionada -->
+            <corners android:radius="20dp" /> <!-- Raio dos cantos arredondados -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- Cor de fundo não selecionada -->
+        </shape>
+    </item>
+</selector>

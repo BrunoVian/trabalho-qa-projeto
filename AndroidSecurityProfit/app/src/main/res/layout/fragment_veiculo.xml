@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo_telas"
+    tools:context=".ui.veiculo.VeiculoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLpVeiculo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/button_amarelo"
+            android:text="Limpar\nBusca"
+            android:textSize="14dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/limpar"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+
+            />
+
+        <Button
+            android:id="@+id/btnNvVeiculo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/button_azul"
+            android:text="Novo\nVeículo"
+            android:textSize="14dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/novo_veiculo"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtBscVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o modelo ou placa..."
+        android:inputType="text"
+        android:padding="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_margin="12dp"
+        android:drawableLeft="@drawable/lupa"
+        android:drawablePadding="10dp"
+
+        android:background="@drawable/forma_edit_text"
+        />
+    <GridView
+        android:id="@+id/gvVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_fundo_grid"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_margin="12dp"
+        />
+
+
+
+
+</LinearLayout>

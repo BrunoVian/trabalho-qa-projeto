@@ -1,0 +1,68 @@
+<!-- res/layout/custom_dialog.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/message_atencao">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/atencao"
+
+        />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deseja Realmente Cancelar?"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="O item será cancelado definitivamente."
+        android:textSize="18sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_yes"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:text="Sim"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/border_button_verde"/>
+
+        <Button
+            android:id="@+id/button_no"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:text="Não"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/border_button_vermelho"/>
+
+    </LinearLayout>
+</LinearLayout>

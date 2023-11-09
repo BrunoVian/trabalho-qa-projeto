@@ -1,0 +1,46 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Defina a cor do título da barra superior -->
+        <item name="android:itemTextAppearance">@style/MenuItemStyle</item>
+
+        <item name="android:textColorPrimary">@color/white</item>
+
+        <!-- Defina a cor do ícone de três barras -->
+        <item name="android:textColorSecondary">@color/white</item>
+
+        <!-- Defina o ícone personalizado para o menu de três barras -->
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>
+    </style>
+
+    <!-- Estilo para o ícone de menu de três barras personalizado -->
+    <style name="OverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@null</item>
+    </style>
+
+
+    <style name="MenuItemStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textColor">@color/cor_menu_selecionado</item>
+    </style>
+
+    <style name="TabItemStyle">
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="MyMaterialCardTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here if needed -->
+    </style>
+
+    <style name="SquareChip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipCornerRadius">8dp</item>
+    </style>
+
+    <style name="SquareChip2" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipCornerRadius">8dp</item>
+    </style>
+
+
+
+
+
+
+</resources>

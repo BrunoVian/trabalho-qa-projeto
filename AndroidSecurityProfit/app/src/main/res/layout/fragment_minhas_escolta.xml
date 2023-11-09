@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_telas"
+    android:orientation="vertical"
+    tools:context=".ui.escolta.EscoltaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/forma_edit_text"
+            android:drawableLeft="@drawable/lupa"
+            android:hint="Digite o nome do cliente..."
+            android:inputType="text"
+            android:padding="8dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgRecarregar"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_botao"
+            android:clickable="true"
+            android:contextClickable="true" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCardEscolta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+</LinearLayout>

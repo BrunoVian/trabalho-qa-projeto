@@ -1,0 +1,18 @@
+<!-- res/drawable/button_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado quando o botão não está pressionado -->
+    <item android:state_pressed="false">
+        <shape>
+            <corners android:radius="20dp" />
+            <solid android:color="#088A08" /> <!-- Cor de fundo padrão -->
+        </shape>
+    </item>
+
+    <!-- Estado quando o botão está pressionado -->
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="20dp" />
+            <solid android:color="#DF088A08" /> <!-- Cor de fundo quando pressionado (vermelho neste exemplo) -->
+        </shape>
+    </item>
+</selector>

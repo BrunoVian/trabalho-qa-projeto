@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-4dp" android:right="-4dp"> <!-- Ajuste os valores negativos conforme necessário -->
+        <shape android:shape="rectangle">/> <!-- Cor de fundo da borda -->
+            <corners android:topRightRadius="10dp" /> <!-- Raio dos cantos da borda -->
+        </shape>
+    </item>
+    <item android:left="0dp" android:right="0dp"> <!-- Ajuste os valores conforme necessário -->
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" /> <!-- Cor de fundo do menu -->
+            <corners android:topRightRadius="15dp"
+                android:bottomRightRadius="10dp"/> <!-- Raio dos cantos do menu -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,92 @@
+<!-- res/layout/custom_dialog.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/message_atencao">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ajuda"
+
+        />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contate nosso suporte!"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+
+        android:textColor="@android:color/black"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:text="Telefone:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:text="(45) 99954-5864"
+        android:textSize="18sp"
+        android:paddingBottom="15dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:text="E-mail:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        android:text="suporte@securityprofit.com.br"
+        android:textSize="18sp"
+        android:paddingBottom="20dp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_ok"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Ok"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/button_toolbar"/>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AndroidSecurityProfit" parent="Theme.AppCompat.Light">
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="toolbarStyle">@style/Widget.AppCompat.Toolbar</item>
+    </style>
+
+    <style name="Theme.AndroidSecurityProfit.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AndroidSecurityProfit.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+
+    <style name="Theme.AndroidSecurityProfit.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+</resources>

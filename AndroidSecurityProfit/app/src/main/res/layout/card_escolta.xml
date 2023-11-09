@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardEscolta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:theme="@style/MyMaterialCardTheme"
+                android:layout_marginVertical="5dp"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNomeRazao"
+                        android:layout_width="match_parent"
+                        android:text="Nome Raxão Social da Empresa"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txtCnpjCpf"
+                        android:layout_width="match_parent"
+                        android:layout_marginVertical="5dp"
+                        android:text="00.000.000/0000-00"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txtEndereco"
+                        android:layout_width="match_parent"
+                        android:text="Logeadouro, numero, bairro"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txtCidadeEstado"
+                        android:layout_width="match_parent"
+                        android:text="cidade - estado"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="43dp"
+                            style="@style/SquareChip"
+                            android:layout_marginLeft="15dp"
+                            app:chipBackgroundColor="@color/chip_aberta"
+                            app:chipIcon="@drawable/status_aberta"
+                            app:chipIconSize="14dp"
+                            android:text="status"
+                            android:textSize="12dp"
+                            android:clickable="false"
+                            android:textColor="#1D192B">
+
+                        </com.google.android.material.chip.Chip>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/txtData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="43dp"
+                            style="@style/SquareChip"
+                            android:layout_marginLeft="15dp"
+                            app:chipIcon="@drawable/calendario_card"
+                            app:chipStrokeColor="@color/color_view"
+                            app:chipBackgroundColor="@color/white"
+                            app:chipStrokeWidth="1dp"
+                            app:chipIconSize="18dp"
+                            android:text="  00/00/0000  "
+                            android:textSize="12dp"
+                            android:clickable="false"
+                            android:textColor="#1D192B">
+
+                        </com.google.android.material.chip.Chip>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
