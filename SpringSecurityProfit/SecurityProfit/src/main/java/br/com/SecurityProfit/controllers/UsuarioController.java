@@ -42,7 +42,7 @@ public class UsuarioController {
     }
 
     @PutMapping
-    @ApiOperation(value = "Altera os dados do usuário")
+    @ApiOperation(value = "Altera os dados do usuário ajustesssss")
     public ResponseEntity<UsuarioDTO> edit(@Valid @RequestBody UsuarioEditDTO usuarioEditDTO) throws Exception {
         return ResponseEntity.ok(usuarioService.edit(usuarioEditDTO));
     }
