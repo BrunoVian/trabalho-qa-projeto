@@ -28,6 +28,13 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioService.findAll());
     }
 
+    @GetMapping
+    @ApiOperation(value = "Retorna uma lista de usuários teste")
+    public ResponseEntity<List<UsuarioDTO>> findAllUers() {
+
+        return ResponseEntity.ok(usuarioService.findAll());
+    }
+
     @GetMapping(path = "/{id}")
     @ApiOperation(value = "Retorna os dados de um usuário")
     public ResponseEntity<UsuarioDTO> findById(@PathVariable Long id) throws Exception {
