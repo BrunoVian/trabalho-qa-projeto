@@ -28,6 +28,13 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioService.findAll());
     }
 
+    @GetMapping
+    @ApiOperation(value = "Retorna uma lista de usuários teste")
+    public ResponseEntity<List<UsuarioDTO>> findAllUers() {
+
+        return ResponseEntity.ok(usuarioService.findAll());
+    }
+
     @GetMapping(path = "/{id}")
     @ApiOperation(value = "Retorna os dados de um usuário")
     public ResponseEntity<UsuarioDTO> findById(@PathVariable Long id) throws Exception {
@@ -35,7 +42,7 @@ public class UsuarioController {
     }
 
     @PutMapping
-    @ApiOperation(value = "Altera os dados do usuário")
+    @ApiOperation(value = "Altera os dados do usuário ajustesssss")
     public ResponseEntity<UsuarioDTO> edit(@Valid @RequestBody UsuarioEditDTO usuarioEditDTO) throws Exception {
         return ResponseEntity.ok(usuarioService.edit(usuarioEditDTO));
     }
